@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="landscape">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="MyMovies" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="896" height="414"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="fEh-Hh-iLA">
+                                <rect key="frame" x="83" y="0.0" width="730" height="359"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cOc-qO-Mjr">
+                                        <rect key="frame" x="0.0" y="0.0" width="240" height="359"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="19Z-pH-qPi">
+                                                <rect key="frame" x="13" y="23" width="214" height="312"/>
+                                                <state key="normal" backgroundImage="trailer1.png"/>
+                                                <connections>
+                                                    <segue destination="r8K-9G-MRt" kind="show" identifier="third" id="KMk-2k-eff"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstItem="19Z-pH-qPi" firstAttribute="centerY" secondItem="cOc-qO-Mjr" secondAttribute="centerY" id="3UZ-aR-T5S"/>
+                                            <constraint firstItem="19Z-pH-qPi" firstAttribute="top" secondItem="cOc-qO-Mjr" secondAttribute="top" constant="23" id="3pN-G0-ifb"/>
+                                            <constraint firstItem="19Z-pH-qPi" firstAttribute="centerX" secondItem="cOc-qO-Mjr" secondAttribute="centerX" id="JoW-lC-YdJ"/>
+                                            <constraint firstItem="19Z-pH-qPi" firstAttribute="leading" secondItem="cOc-qO-Mjr" secondAttribute="leading" constant="13" id="zUZ-jh-OF3"/>
+                                        </constraints>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="lqU-Ke-7Pk">
+                                        <rect key="frame" x="245" y="0.0" width="240" height="359"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ss4-Ou-vjE">
+                                                <rect key="frame" x="13" y="23" width="214" height="312"/>
+                                                <state key="normal" backgroundImage="trailer2.png"/>
+                                                <connections>
+                                                    <segue destination="r8K-9G-MRt" kind="show" identifier="second" id="15M-fw-Vcj"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstItem="ss4-Ou-vjE" firstAttribute="top" secondItem="lqU-Ke-7Pk" secondAttribute="top" constant="23" id="DY8-qF-yam"/>
+                                            <constraint firstItem="ss4-Ou-vjE" firstAttribute="centerX" secondItem="lqU-Ke-7Pk" secondAttribute="centerX" id="QxB-70-Ub1"/>
+                                            <constraint firstItem="ss4-Ou-vjE" firstAttribute="centerY" secondItem="lqU-Ke-7Pk" secondAttribute="centerY" id="hja-0q-Ek2"/>
+                                        </constraints>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="SAG-RK-JdK">
+                                        <rect key="frame" x="490" y="0.0" width="240" height="359"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="L19-b0-NdE">
+                                                <rect key="frame" x="13" y="23" width="214" height="312"/>
+                                                <state key="normal" backgroundImage="trailer3.png"/>
+                                                <connections>
+                                                    <segue destination="r8K-9G-MRt" kind="show" identifier="first" id="tyW-2f-EIq"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstItem="L19-b0-NdE" firstAttribute="centerX" secondItem="SAG-RK-JdK" secondAttribute="centerX" id="Awg-aQ-vyY"/>
+                                            <constraint firstItem="L19-b0-NdE" firstAttribute="centerY" secondItem="SAG-RK-JdK" secondAttribute="centerY" id="HcE-K2-BHd"/>
+                                            <constraint firstItem="L19-b0-NdE" firstAttribute="top" secondItem="SAG-RK-JdK" secondAttribute="top" constant="23" id="e6Y-ma-CNm"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="lqU-Ke-7Pk" firstAttribute="centerX" secondItem="fEh-Hh-iLA" secondAttribute="centerX" id="gbD-Zl-66S"/>
+                                </constraints>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="fEh-Hh-iLA" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="01G-C7-vZ9"/>
+                            <constraint firstItem="fEh-Hh-iLA" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="DnF-bO-cqX"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="fEh-Hh-iLA" secondAttribute="bottom" constant="34" id="a81-pC-vYU"/>
+                            <constraint firstItem="fEh-Hh-iLA" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="39" id="cbi-9o-bP5"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="128.57142857142856" y="-257.97101449275362"/>
+        </scene>
+        <!--AV Player View Controller-->
+        <scene sceneID="d21-ZK-VKH">
+            <objects>
+                <avPlayerViewController videoGravity="AVLayerVideoGravityResizeAspect" id="r8K-9G-MRt" customClass="PlayerViewController" customModule="MyMovies" customModuleProvider="target" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="hmH-Jp-Bdf" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="129" y="507"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="trailer1.png" width="214" height="312"/>
+        <image name="trailer2.png" width="214" height="312"/>
+        <image name="trailer3.png" width="214" height="312"/>
+    </resources>
+    <inferredMetricsTieBreakers>
+        <segue reference="KMk-2k-eff"/>
+    </inferredMetricsTieBreakers>
+</document>
